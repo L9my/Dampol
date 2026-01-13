@@ -1,30 +1,33 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
+// Base path for GitHub Pages deployment
+const BASE_PATH = '/Dampol/';
+
 const projects = [
   {
     id: 1,
     title: 'Garden Office Pod',
     category: 'Commercial',
-    image: `${import.meta.env.BASE_URL}assets/hero-bg.png`,
+    image: `${BASE_PATH}assets/hero-bg.png`,
   },
   {
     id: 2,
     title: 'Modern Modular Extension',
     category: 'Residential',
-    image: `${import.meta.env.BASE_URL}assets/exterior-variant.png`,
+    image: `${BASE_PATH}assets/exterior-variant.png`,
   },
   {
     id: 3,
     title: 'Premium Cladding Detail',
     category: 'Engineering',
-    image: `${import.meta.env.BASE_URL}assets/detail.png`,
+    image: `${BASE_PATH}assets/detail.png`,
   },
   {
     id: 4,
     title: 'Executive Interior',
     category: 'Interior',
-    image: `${import.meta.env.BASE_URL}assets/interior.png`,
+    image: `${BASE_PATH}assets/interior.png`,
   },
 ];
 
