@@ -1,0 +1,51 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-dark-900 border-t border-white/10 pt-20 pb-10" id="contact">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl font-bold uppercase tracking-widest text-white mb-6">Dampol.</h2>
+        <p class="max-w-md text-gray-400 leading-relaxed mb-8">
+          Revolutionizing modern living with premium container architecture. 
+          Sustainable, efficient, and uncompromisingly beautiful.
+        </p>
+        <div class="flex gap-4">
+            {/* Social icons placeholders */}
+            <div class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-bronze-500 hover:border-bronze-500 hover:text-white transition-all cursor-pointer">IG</div>
+            <div class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-bronze-500 hover:border-bronze-500 hover:text-white transition-all cursor-pointer">FB</div>
+            <div class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-bronze-500 hover:border-bronze-500 hover:text-white transition-all cursor-pointer">LI</div>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-white uppercase tracking-widest font-bold mb-6">Contact</h4>
+        <ul class="space-y-4 text-gray-400">
+          <li>123 architect St.</li>
+          <li>Design District, NY 10012</li>
+          <li class="pt-4 text-white">hello@dampol.com</li>
+          <li class="text-white">+1 (555) 123-4567</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white uppercase tracking-widest font-bold mb-6">Menu</h4>
+        <ul class="space-y-4 text-gray-400">
+          <li><a href="#" class="hover:text-bronze-500 transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-bronze-500 transition-colors">About</a></li>
+          <li><a href="#projects" class="hover:text-bronze-500 transition-colors">Projects</a></li>
+          <li><a href="#contact" class="hover:text-bronze-500 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-widest text-gray-500">
+      <p>&copy; {currentYear} Dampol. All rights reserved.</p>
+      <div class="flex gap-8 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>

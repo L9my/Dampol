@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero.astro';
+import Principles from '../components/Principles.astro';
+import ProjectGallery from '../components/ProjectGallery';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Dampol | Premium Container Architecture">
+  <Navbar client:load />
+  
+  <main>
+    <Hero />
+    
+    <Principles />
+    
+    <!-- Video/Showcase Placeholder Section inspired by "3D MODEL FOR MKA" -->
+    <section class="h-[60vh] relative flex items-center justify-center overflow-hidden bg-fixed bg-center bg-cover bg-no-repeat" style="background-image: url('/assets/interior.png');">
+       <div class="absolute inset-0 bg-black/60"></div>
+       <div class="z-10 text-center max-w-4xl px-6">
+           <h2 class="text-4xl md:text-6xl text-white font-light tracking-wide mb-8">
+               "We build <span class="text-bronze-500 italic font-serif">dreams</span> out of steel."
+           </h2>
+           <button class="border border-white hover:bg-white hover:text-black transition-colors px-8 py-3 uppercase tracking-widest text-sm font-bold">
+               Watch Presentation
+           </button>
+       </div>
+    </section>
+
+    <ProjectGallery client:visible />
+    
+  </main>
+  
+  <Footer />
+</Layout>

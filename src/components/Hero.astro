@@ -1,0 +1,61 @@
+---
+import { ArrowDown } from 'lucide-react';
+---
+
+<section class="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+  {/* Background Image */}
+  <div class="absolute inset-0 z-0 select-none">
+    <img 
+      src="/assets/hero-bg.png" 
+      alt="Modern Modular Garden Office" 
+      class="w-full h-full object-cover scale-105 animate-slow-zoom" 
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-dark-900/90 via-dark-900/40 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+  </div>
+
+  {/* Content */}
+  <div class="container mx-auto px-6 z-10 relative pt-20">
+    <div class="max-w-4xl">
+      <div class="inline-block mb-6 overflow-hidden">
+        <span class="block animate-slide-up text-bronze-500 font-bold tracking-[0.2em] uppercase text-sm md:text-base mb-2">
+          Engineering & Architecture
+        </span>
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-8">
+        INNOVATION <br />
+        <span class="font-bold text-white">IN EVERY PROJECT</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-white/80 max-w-2xl mb-12 leading-relaxed border-l-2 border-bronze-500 pl-6">
+        We create projects that perfectly combine functionality, aesthetics, and innovative technologies. Premium container living redefined.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-6">
+        <a href="#projects" class="bg-bronze-500 text-white px-8 py-4 uppercase tracking-widest font-bold hover:bg-white hover:text-dark-900 transition-colors duration-300 text-center">
+          View Projects
+        </a>
+        <a href="#contact" class="border border-white/20 hover:border-bronze-500 hover:text-bronze-500 px-8 py-4 uppercase tracking-widest font-bold transition-colors duration-300 text-center backdrop-blur-sm">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Scroll Indicator */}
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 opacity-70 animate-bounce">
+    <span class="text-[10px] uppercase tracking-widest">Scroll</span>
+    <ArrowDown className="w-4 h-4" />
+  </div>
+</section>
+
+<style>
+  @keyframes slow-zoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+  .animate-slow-zoom {
+    animation: slow-zoom 20s infinite alternate ease-in-out;
+  }
+</style>
