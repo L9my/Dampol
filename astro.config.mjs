@@ -6,6 +6,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://L9my.github.io',
+  base: '/Dampol',
   vite: {
     plugins: [tailwindcss()]
   },
