@@ -6,25 +6,25 @@ const projects = [
     id: 1,
     title: 'Garden Office Pod',
     category: 'Commercial',
-    image: '/assets/hero-bg.png',
+    image: '/Dampol/assets/hero-bg.png',
   },
   {
     id: 2,
     title: 'Modern Modular Extension',
     category: 'Residential',
-    image: '/assets/exterior-variant.png',
+    image: '/Dampol/assets/exterior-variant.png',
   },
   {
     id: 3,
     title: 'Premium Cladding Detail',
     category: 'Engineering',
-    image: '/assets/detail.png',
+    image: '/Dampol/assets/detail.png',
   },
   {
     id: 4,
     title: 'Executive Interior',
     category: 'Interior',
-    image: '/assets/interior.png',
+    image: '/Dampol/assets/interior.png',
   },
 ];
 
